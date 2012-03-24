@@ -1,0 +1,47 @@
+AUTHOR: restartr
+TITLE: テスト投稿1
+STATUS: Publish
+ALLOW COMMENTS: 1
+CONVERT BREAKS: 1
+ALLOW PINGS: 1
+DATE: 03/20/2012 21:29:10 PM
+CATEGORY: test
+CATEGORY: python
+-----
+BODY:
+
+		<div class="section">
+			<p>テスト投稿１</p>
+		</div>
+
+-----
+EXTENDED BODY:
+
+-----
+EXCERPT:
+
+-----
+KEYWORDS:
+
+-----
+
+--------
+AUTHOR: restartr
+TITLE: テスト投稿2
+STATUS: Publish
+ALLOW COMMENTS: 1
+CONVERT BREAKS: 1
+ALLOW PINGS: 1
+DATE: 03/20/2012 21:29:10 PM
+CATEGORY: test
+CATEGORY: scala
+-----
+BODY:
+
+		<div class="section">
+			<p>テスト</p>
+			<p>ScalaとPython。</p>
+		</div>
+
+--------
+
