@@ -1,28 +1,49 @@
-
-import from movable type data to tumblr
+Import the MovableType formated data to Tumblr
 ====
 
-setup
+Setup
 ----
-* install  requirements
 
-> pip oauth2
+Install  requirements
 
-* register application
+    pip oauth2
 
-  * access [http://www.tumblr.com/oauth/apps].
+Register application
+
+  * access tumblr oauth page. ( http://www.tumblr.com/oauth/apps )
   * register application
   * copy consumer_key and consumer_secret.
 
-* write your consumer_key and consumer_secret to config.py 
+Write your consumer_key and consumer_secret to config.py 
 
-> CONSUMER_KEY = '<consumer_key>'
-> CONSUMER_SECRET = '<consumer_secret>'
-> BASE_HOSTNAME = '<your_tumblr_url>'
+    CONSUMER_KEY = '<consumer_key>'
+    CONSUMER_SECRET = '<consumer_secret>'
+    BASE_HOSTNAME = '<your_tumblr_url>' # like '<your-id>.tumblr.com'
 
-usage
+
+Put your movable type format file to "resources" directory, and edit config.py
+
+    PARSE_FILE_PATH = 'path/to/movable_type_data.txt'
+
+If you want to public post, change config as following.
+
+    POST_STATE = 'publish'
+    
+
+Usage
 ----
 
-> python ./run.py
+    python ./run.py
 
- 
+And show as following
+
+    open in browser:http://www.tumblr.com/oauth/authorize?oauth_token={OAUTH_TOKEN}
+    oauth_verifier:
+
+Access this url, and redirect the access.
+
+Copy the oauth_verifier included in the redirected page url.
+
+Paste it, and start to import.
+
+
